@@ -1,3 +1,4 @@
 {
-    "python.linting.pylintEnabled": false
+    "python.linting.pylintEnabled": false,
+    "python.pythonPath": "/Users/ItsNED/.local/share/virtualenvs/instagram_clone-nSIgyTQx/bin/python"
 }
