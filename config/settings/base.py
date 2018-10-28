@@ -239,3 +239,4 @@ SOCIALACCOUNT_ADAPTER = 'instagram_clone.users.adapters.SocialAccountAdapter'
 
 # Your stuff...
 # ------------------------------------------------------------------------------
+TAGGIT_CASE_INSENSITIVE = True
