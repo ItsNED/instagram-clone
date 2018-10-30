@@ -11,6 +11,7 @@ urlpatterns = [
     path(settings.ADMIN_URL, admin.site.urls),
     # User management
     path("rest_auth/", include('rest_auth.urls')),
+    path("rest_auth/registration/", include('rest_auth.registration.urls')),
     path(
         "users/",
         include("instagram_clone.users.urls", namespace="users"),
