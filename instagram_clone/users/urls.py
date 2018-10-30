@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, re_path
 from . import views
 
 app_name = "users"
@@ -11,5 +11,6 @@ urlpatterns = [
     path("search/", view=views.Search.as_view(), name="search"), 
     path("<username>/", view=views.UserProfile.as_view(), name="user_profile"),
     path("<username>/password/", view=views.ChangePassword.as_view(), name="change_password"),
+    re_path(r'login/facebook/$', view=views.FacebookLogin.as_view(), name='fb_login'),
 
 ]
