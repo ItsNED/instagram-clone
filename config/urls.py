@@ -10,7 +10,7 @@ urlpatterns = [
     
     path(settings.ADMIN_URL, admin.site.urls),
     # User management
-    path("api-token-auth/", obtain_jwt_token),
+    path("rest_auth/", include('rest_auth.urls')),
     path(
         "users/",
         include("instagram_clone.users.urls", namespace="users"),
