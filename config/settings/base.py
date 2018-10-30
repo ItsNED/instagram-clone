@@ -68,7 +68,7 @@ THIRD_PARTY_APPS = [
     'allauth.socialaccount',
     'rest_framework',   # Rest Framework
     'taggit',   # Tags for the photos
-    'taggit-serializer', # tag serializer
+    'taggit_serializer',  # tag serializer
 ]
 LOCAL_APPS = [
     'instagram_clone.users.apps.UsersAppConfig',
