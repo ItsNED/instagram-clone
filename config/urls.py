@@ -1,5 +1,5 @@
 from django.conf import settings
-from django.urls import include, path
+from django.urls import include, path, re_path
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.views.generic import TemplateView
@@ -10,8 +10,8 @@ urlpatterns = [
     
     path(settings.ADMIN_URL, admin.site.urls),
     # User management
-    path("rest_auth/", include('rest_auth.urls')),
-    path("rest_auth/registration/", include('rest_auth.registration.urls')),
+    re_path(r'^rest-auth/', include('rest_auth.urls')),
+    re_path(r'^rest_auth/registration/', include('rest_auth.registration.urls')),
     path(
         "users/",
         include("instagram_clone.users.urls", namespace="users"),
