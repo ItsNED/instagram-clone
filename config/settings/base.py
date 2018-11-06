@@ -73,6 +73,7 @@ THIRD_PARTY_APPS = [
     'taggit_serializer',    # tag serializer
     'rest_auth',    # rest auth
     'rest_auth.registration',   # enable registration
+    'corsheaders',  # To accept request from React
 ]
 LOCAL_APPS = [
     'instagram_clone.users.apps.UsersAppConfig',
