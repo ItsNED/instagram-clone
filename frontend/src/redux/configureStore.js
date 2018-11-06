@@ -1,5 +1,5 @@
 import { createStore, combineReducers, applyMiddleware } from "redux";
-import thun from "redux-thunk";
+import thunk from "redux-thunk";
 import users from "redux/modules/users";
 
 const middlewares = [thunk];
