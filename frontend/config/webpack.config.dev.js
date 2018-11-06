@@ -287,6 +287,7 @@ module.exports = {
             use: getStyleLoaders({
               importLoaders: 1,
               modules: true,
+              camelCase:true,
               getLocalIdent: getCSSModuleLocalIdent,
             }),
           },
@@ -309,6 +310,7 @@ module.exports = {
                 importLoaders: 2,
                 modules: true,
                 getLocalIdent: getCSSModuleLocalIdent,
+                camelCase:true
               },
               'sass-loader'
             ),
