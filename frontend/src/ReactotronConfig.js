@@ -3,4 +3,4 @@ import { reactotronRedux } from "reactotron-redux";
 
 Reactotron.configure({ name : "insta-clone" }).use(reactotronRedux()).connect();
 
-export default Reactotron;
+export default Reactotron; 
