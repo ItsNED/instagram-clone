@@ -1,4 +1,4 @@
-import "ReactotronConfig";
+// import "ReactotronConfig";
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
