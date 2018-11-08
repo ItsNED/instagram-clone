@@ -6,17 +6,21 @@ import { ConnectedRouter } from "react-router-redux";
 import store, { history } from "redux/configureStore";
 import 'index.css';
 import App from 'App';
+import I18n from 'redux-i18n';
+import { translations } from "translations";
 
 
 
 ReactDOM.render(
-    <Provider store={store}>
-        <ConnectedRouter history={history}>
-            <App />
-        </ConnectedRouter>
-    </Provider>,
-     document.getElementById('root')
-     );
+  <Provider store={store}>
+    <ConnectedRouter history={history}>
+      <I18n translations={translations} initialLang="en" fallbackLang="en">
+        <App />
+      </I18n>
+    </ConnectedRouter>
+  </Provider>,
+  document.getElementById("root")
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
