@@ -1,4 +1,4 @@
-import { createStore, combineReducers, applyMiddleware } from "redux";
+import { createStore, combineReducers, compose, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 import { routerReducer, routerMiddleware } from "react-router-redux";
 import createHistory from "history/createBrowserHistory";
@@ -18,10 +18,10 @@ if(env === "development"){
 const reducer = combineReducers({
     users,
     routing: routerReducer
-})
+});
 
-let store = initialState => createStore(reducer, applyMiddleware(...middlewares));  // ... : unpack array
+let store = initialState => 
+    createStore(reducer, applyMiddleware(...middlewares));
 
 export { history };
-
 export default store();
