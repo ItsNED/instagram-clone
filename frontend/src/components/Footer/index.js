@@ -20,8 +20,8 @@ const Footer = (props, context) => (
           </ul>
         </nav>
       </div>
-      <div>
-        <span>© 2018 instaclone</span>
+      <div className={styles.column}>
+        <span className={styles.copyright}>© 2018 instaclone</span>
       </div>
     </footer>
 );
