@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-expressions */
 import React from "react";
-import styles from "./styles.scss";
+import styles from "./styles.module.scss";
 
 const Footer = (props, context) => (
     <footer className={styles.footer}>
